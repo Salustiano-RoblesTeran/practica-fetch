@@ -18,12 +18,29 @@ fetch(url)
 
 // Asincrono
 
-const traerNoticias = async () => {
+// const traerNoticias = async () => {
 
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) {
+//             throw new Error ('Network response was not ok ' + response.statusText);
+//         }
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.error('There was a problem with the fetch operation:', error);
+//     }
+// }
+
+
+// traerNoticias();
+
+
+const traerNoticias = async () => {
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            throw new Error ('Network response was not ok ' + response.statusText);
+            throw new Error('Network response was not ok ' + response.statusText);
         }
         const data = await response.json();
         console.log(data);
@@ -34,12 +51,6 @@ const traerNoticias = async () => {
 
 
 traerNoticias();
-
-
-
-
-
-
 
 
 
